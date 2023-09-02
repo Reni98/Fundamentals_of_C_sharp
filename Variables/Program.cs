@@ -10,61 +10,65 @@ namespace Változók
     {
         static void Main(string[] args)
         {
-            // Egész szám változó
+            // Integer variable
             int age = 30;
 
-            // Szöveg változó (string)
+            // String variable
             string name = "John Doe";
 
-            // Lebegőpontos szám változó
+            // A floating-point number is variable
             double temperature = 25.5;
 
-            // Logikai változó (bool)
+            // Boolean variable
             bool isStudent = true;
 
-            // Karakter változó (char)
+            // Char variable
             char grade = 'A';
 
-            // Egész szám tömb
+            // An array of integers
             int[] numbers = { 1, 2, 3, 4, 5 };
 
-            // Kiírás a konzolra
-            Console.WriteLine("Név: " + name);
-            Console.WriteLine("Kor: " + age);
-            Console.WriteLine("Hőmérséklet: " + temperature);
-            Console.WriteLine("Diák: " + isStudent);
-            Console.WriteLine("Érdemjegy: " + grade);
+            // Output to the console
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Age: " + age);
+            Console.WriteLine("Temperature: " + temperature);
+            Console.WriteLine("Student: " + isStudent);
+            Console.WriteLine("Grade: " + grade);
 
-            // Egész számok összeadása és kiíratása
+            // Adding and writing whole numbers
             int num1 = 10;
             int num2 = 5;
             int sum = num1 + num2;
             Console.WriteLine("Összeg: " + sum);
 
-            // Szöveg összefűzése
+            // Concatenate text
             string greeting = "Helló, ";
             string target = "Világ!";
             string message = greeting + target;
             Console.WriteLine(message);
 
 
-            // Összeadás
+            // Addition
             int adding = 5 + 3;
             Console.WriteLine("Sum: " + adding);
 
-            // Kivonás
+            // Subtraction
             int difference = 10 - 4;
             Console.WriteLine("Difference: " + difference);
-            // Szorzás
+            
+            // Multiplication
             int product = 6 * 7;
             Console.WriteLine("Product: " + product);
-            // Osztás
+            
+            // Division
             double quotient = 15.0 / 3.0;
             Console.WriteLine("Quotient: " + quotient);
-            // Maradék számítása (modulo)
+            
+            // Remainder calculation
             int remainder = 10 % 3;
             Console.WriteLine("Remainder: " + remainder);
-            // Kifejezések
+            
+            // Expressions
             int x = 5;
             int y = 3;
             int result1 = x + y * 2; 
@@ -72,14 +76,14 @@ namespace Változók
             Console.WriteLine("Result1: " + result1);
             Console.WriteLine("Result2: " + result2);
 
-            // Összetett kifejezések
+            // Compound expressions
             int a = 10;
             int b = 3;
             int c = 5;
             int result3 = (a + b) * c;
             Console.WriteLine("Result3: " + result3);
 
-            // Egyéb műveletek
+            // Other operations
             int increment = 5;
             increment++;  
             increment--; 
@@ -87,27 +91,27 @@ namespace Változók
             int negation = -10;
             Console.WriteLine("Increment: " + increment);
 
-            // Osztás kerekítése
+            //Rounding a division
             int roundedResult = 7 / 2; 
             double preciseResult = 7.0 / 2.0;
             Console.WriteLine("RoundedResult: " + roundedResult);
             Console.WriteLine("PreciseResult: " + preciseResult);
 
-            // Hatványozás
+            // Exponentiation
             double square = Math.Pow(2, 2);
             Console.WriteLine("Square: " + square);
           
-            // Gyökvonás
+            // Root trait
             double squareRoot = Math.Sqrt(16);
             Console.WriteLine("SquareRoot: " + squareRoot);
 
 
-            // Logikai műveletek
+            // Logic operations
             bool isTrue = true;
             bool isFalse = false;
-            bool logicalAnd = isTrue && isFalse; // Az eredmény false lesz
-            bool logicalOr = isTrue || isFalse; // Az eredmény true lesz
-            bool logicalNot = !isTrue; // Az eredmény false lesz
+            bool logicalAnd = isTrue && isFalse; // The result will be false
+            bool logicalOr = isTrue || isFalse; //The result will be true
+            bool logicalNot = !isTrue; // The result will be false
 
             Console.WriteLine("LogicalAnd: " + logicalAnd);
             Console.WriteLine("LogicalOr: " + logicalOr);
