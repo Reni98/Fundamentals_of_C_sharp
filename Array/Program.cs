@@ -28,7 +28,7 @@ namespace Tömb
             Console.WriteLine("Array size: " + size); // 5
 
             //Read all elements using a loop
-            Console.WriteLine("Az összes elem:");
+            Console.WriteLine("All elements:");
             for (int i = 0; i < size; i++)
             {
                 Console.WriteLine(numbers[i]);
