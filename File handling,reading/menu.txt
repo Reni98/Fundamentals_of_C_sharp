@@ -1,0 +1,20 @@
+1;Hamburger;John Doe;1500 Ft;2 db
+2;Pizza;Alice Smith;2000 Ft;1 db
+3;Lasagne;Bob Johnson;2500 Ft;3 db
+4;Hotdog;Eva Williams;800 Ft;2 db
+5;Szendvics;David Lee;1200 Ft;4 db
+6;Sushi;Laura Miller;3500 Ft;2 db
+7;Taco;Michael Davis;1800 Ft;3 db
+8;Gyros;Sarah Wilson;2200 Ft;1 db
+9;Spaghetti;Robert Taylor;2600 Ft;4 db
+10;Kebab;Jennifer Brown;1500 Ft;2 db
+11;Burrito;William Jones;1900 Ft;3 db
+12;Pad Thai;Emily Martinez;2800 Ft;1 db
+13;Ramen;Daniel Wilson;2400 Ft;2 db
+14;Pho;Olivia Johnson;2700 Ft;1 db
+15;Pasta Carbonara;Sophia Anderson;3200 Ft;2 db
+16;Tofu Stir-Fry;James Lee;2100 Ft;3 db
+17;Chicken Parmesan;Ava Garcia;2900 Ft;1 db
+18;Beef Stroganoff;Logan Lopez;3100 Ft;2 db
+19;Mushroom Risotto;Grace Davis;2600 Ft;1 db
+20;Barbecue Ribs;Lucas Moore;3800 Ft;2 db
