@@ -16,12 +16,12 @@ namespace statements
 
             if (number % 2 == 0)
             {
-                // If the number is divisible by two (without a remainder), it is even.
+                // Ha a szám osztható kettővel (maradék nélkül), akkor páros
                 Console.WriteLine(number + " even number.");
             }
             else
             {
-                // If the number is not divisible by two without a remainder, then it is odd.
+                // Ha a szám nem osztható kettővel maradék nélkül, akkor páratlan.
                 Console.WriteLine(number + " odd number.");
             }
 
