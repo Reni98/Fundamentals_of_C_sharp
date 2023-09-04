@@ -11,34 +11,34 @@ namespace Lista
         static void Main(string[] args)
         {
 
-            // The list is a data structure with dynamic size, while the array has a fixed size.
-            // It allows you to dynamically add and remove elements without having to define their size in advance.
-            // Create a list
+            // A lista egy dinamikus méretű adatszerkezet, míg a tömbnek rögzített mérete van.
+            // Ez lehetővé teszi, hogy dinamikusan hozzáadhassunk és eltávolíthassunk elemeket anélkül, hogy előre meghatároznánk a méretüket
+            // Lista létrehozása
             List<int> numbers = new List<int>();
 
-            // Add elements to the list
+            // Elemek hozzáadása a listához
             numbers.Add(10);
             numbers.Add(20);
             numbers.Add(30);
 
-            // Add elements to the list
+           //Első elem kiírása
             Console.WriteLine("The first element: " + numbers[0]); // 10
 
-            // Query the size of a list
+            //Lista méretének a lekérdezése
             int size = numbers.Count;
             Console.WriteLine("The size of the list: " + size); // 3
 
-            // Read all elements using a loop
+            // Az összes elem olvasása egy ciklus segítségével
             Console.WriteLine("All element:");
             for (int i = 0; i <size; i++)
             {
                 Console.WriteLine(numbers[i]);
             }
 
-            // Remove elements from the list
+            //Elemek eltávolítása a listából
             numbers.Remove(20); // 20 remove
 
-            // Read all elements again
+            // Az összes elem újbóli olvasása
             Console.WriteLine("All elements after removing 20:");
             foreach (int number in numbers)
             {
