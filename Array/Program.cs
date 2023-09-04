@@ -10,34 +10,34 @@ namespace Tömb
     {
         static void Main(string[] args)
         {
-            // Create an array
+            // Tömb létrehozása
             int[] numbers = new int[5]; // Create an integer array with 5 elements
 
-            // Storing data in the array
+            //Adatok tárolása a tömbben
             numbers[0] = 10;
             numbers[1] = 20;
             numbers[2] = 30;
             numbers[3] = 40;
             numbers[4] = 50;
 
-            //Reading data from the array
+            //Adatok olvasása a tömbbő
             Console.WriteLine("The fifth Element: " + numbers[4]); // 50
 
-            // Query the size of an array
+            //A tömb méretének lekérdezése
             int size = numbers.Length;
             Console.WriteLine("Array size: " + size); // 5
 
-            //Read all elements using a loop
+            //Az összes elem olvasása ciklus segítségével
             Console.WriteLine("All elements:");
             for (int i = 0; i < size; i++)
             {
                 Console.WriteLine(numbers[i]);
             }
 
-            // Initialize an array immediately with values
+            // Tömb azonnali inicializálása értékekkel
             string[] names = { "Alice", "Bob", "Charlie" };
 
-            // Read all elements using a foreach loop
+            //"Az összes elem olvasása egy foreach ciklus segítségével
             Console.WriteLine("Names:");
             foreach (string name in names)
             {
@@ -45,26 +45,26 @@ namespace Tömb
             }
 
 
-            // Create an initial array
+            //Egy kezdeti tömb létrehozása
             int[] originalArry = new int[3] { 10, 20, 30 };
 
-            // Create a new array with a larger size
+            // Egy új tömb létrehozása nagyobb mérettel
             int newSize = originalArry.Length + 1;
             int[] newArray = new int[newSize];
 
-            //Copy the original elements to the new array
+            //Az eredeti elemek másolása az új tömbbe
             for (int i = 0; i < originalArry.Length; i++)
             {
                 newArray[i] = originalArry[i];
             }
 
-            // Add a new element to the new array
+            //Egy új elem hozzáadása az új tömbhöz
             newArray[newSize - 1] = 40;
 
-            // Replace the original array with the new array
+            //Az eredeti tömb cseréje az új tömbbe
             originalArry = newArray;
 
-            // Listing the array expanded with new elements
+            // A tömb felsorolása az új elemekkel kibővítve
             Console.WriteLine("The contents of the new array:");
             foreach (int number in originalArry)
             {
