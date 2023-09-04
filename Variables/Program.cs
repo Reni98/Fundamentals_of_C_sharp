@@ -10,65 +10,65 @@ namespace Változók
     {
         static void Main(string[] args)
         {
-            // Integer variable
+            //Egész szám változó (Integer):
             int age = 30;
 
-            // String variable
+            // Szöveg változó (String):
             string name = "John Doe";
 
-            // A floating-point number is variable
+            //Lebegőpontos szám változó (Float):
             double temperature = 25.5;
 
-            // Boolean variable
+            // Logikai változó (Boolean):
             bool isStudent = true;
 
-            // Char variable
+            //Karakter változó(Char):
             char grade = 'A';
 
-            // An array of integers
+            //Egész számok tömbje
             int[] numbers = { 1, 2, 3, 4, 5 };
 
-            // Output to the console
+            //Kimenet a konzolra
             Console.WriteLine("Name: " + name);
             Console.WriteLine("Age: " + age);
             Console.WriteLine("Temperature: " + temperature);
             Console.WriteLine("Student: " + isStudent);
             Console.WriteLine("Grade: " + grade);
 
-            // Adding and writing whole numbers
+            // Egész számok hozzáadása és kimenet létrehozása
             int num1 = 10;
             int num2 = 5;
             int sum = num1 + num2;
             Console.WriteLine("Összeg: " + sum);
 
-            // Concatenate text
+            //"Szövegek összefűzése 
             string greeting = "Helló, ";
             string target = "Világ!";
             string message = greeting + target;
             Console.WriteLine(message);
 
 
-            // Addition
+            //Összeadás
             int adding = 5 + 3;
             Console.WriteLine("Sum: " + adding);
 
-            // Subtraction
+            //Kivonás
             int difference = 10 - 4;
             Console.WriteLine("Difference: " + difference);
             
-            // Multiplication
+            //Szorzás
             int product = 6 * 7;
             Console.WriteLine("Product: " + product);
             
-            // Division
+            //Osztás
             double quotient = 15.0 / 3.0;
             Console.WriteLine("Quotient: " + quotient);
             
-            // Remainder calculation
+            //Maradékos osztás
             int remainder = 10 % 3;
             Console.WriteLine("Remainder: " + remainder);
             
-            // Expressions
+            //Kifejezések
             int x = 5;
             int y = 3;
             int result1 = x + y * 2; 
@@ -76,14 +76,14 @@ namespace Változók
             Console.WriteLine("Result1: " + result1);
             Console.WriteLine("Result2: " + result2);
 
-            // Compound expressions
+            //összetett kifejezések
             int a = 10;
             int b = 3;
             int c = 5;
             int result3 = (a + b) * c;
             Console.WriteLine("Result3: " + result3);
 
-            // Other operations
+            //Egyéb műveletek"
             int increment = 5;
             increment++;  
             increment--; 
@@ -91,22 +91,22 @@ namespace Változók
             int negation = -10;
             Console.WriteLine("Increment: " + increment);
 
-            //Rounding a division
+            //Osztás kerekítése
             int roundedResult = 7 / 2; 
             double preciseResult = 7.0 / 2.0;
             Console.WriteLine("RoundedResult: " + roundedResult);
             Console.WriteLine("PreciseResult: " + preciseResult);
 
-            // Exponentiation
+            // Hatványozás
             double square = Math.Pow(2, 2);
             Console.WriteLine("Square: " + square);
           
-            // Root trait
+            //Gyökvonás
             double squareRoot = Math.Sqrt(16);
             Console.WriteLine("SquareRoot: " + squareRoot);
 
 
-            // Logic operations
+            //Logikai műveletek
             bool isTrue = true;
             bool isFalse = false;
             bool logicalAnd = isTrue && isFalse; // The result will be false
