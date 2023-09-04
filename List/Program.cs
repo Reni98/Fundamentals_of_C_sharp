@@ -16,7 +16,7 @@ namespace Lista
             // Create a list
             List<int> numbers = new List<int>();
 
-            // Elemek hozzáadása a listához
+            // Add elements to the list
             numbers.Add(10);
             numbers.Add(20);
             numbers.Add(30);
