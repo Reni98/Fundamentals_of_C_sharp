@@ -14,9 +14,9 @@ namespace Ciklusok_for__while_
             //For loop:
             Console.WriteLine("For loop");
 
-            //For loops are usually used when we know in advance how many times we want to repeat an operation.
-            //The for loop syntax:
-            /*for (initial_value; condition; step)
+            //A for ciklusokat általában akkor használjuk, amikor előre tudjuk, hogy hány alkalommal szeretnénk megismételni egy műveletet.
+            //A for ciklus szintaxisa: 
+            /*for (kezdeti_érték; feltétel;lépés)
             {
                 // Here are the actions we repeat
             }*/
@@ -29,10 +29,10 @@ namespace Ciklusok_for__while_
             Console.WriteLine("While loop:");
 
             //While:
-            // A while loop in C# performs repeated actions until a given condition is true. Here is the general syntax:
-            /*while (condition)
+            //A C# nyelvben a while ciklus ismételt műveleteket hajt végre addig, amíg egy adott feltétel igaz.
+            /*while (feltétel)
             {
-                // Here are the actions we repeat
+                // Itt vannak az ismételt cselekvések
             }
             */
 
@@ -44,9 +44,9 @@ namespace Ciklusok_for__while_
             }
             Console.WriteLine("Do-While loop:");
             // do -while loop
-            //which repeats a certain block of code until a given condition remains true.
-            //The point is that the loop body executes at least once, even if the condition is initially false.
-            //It then checks the condition and continues to repeat only if the condition is true.
+            //amely egy bizonyos kódblokkot ismétel, amíg egy adott feltétel igaz marad."
+            //A lényeg az, hogy a ciklus törzse legalább egyszer végrehajtódik, akkor is, ha a feltétel kezdetben hamis
+            //Ezután ellenőrzi a feltételt, és csak akkor folytatja az ismétlést, ha a feltétel igaz.
             /*
             int a = 2;
             do
@@ -63,9 +63,11 @@ namespace Ciklusok_for__while_
                 Console.Write("Please enter a positive number: ");
                 num = Convert.ToInt32(Console.ReadLine());
 
-                //Convert.ToInt32 is a method that converts the value received as a parameter into an integer.
-                //The data read on the console originally comes in text format,
-                //and we convert it to number format using Convert.ToInt32.
+                //A Convert.ToInt32 egy olyan metódus, 
+                //amely átalakítja a paraméterként kapott értéket egész számmá.
+                //A konzolon beolvasott adat eredetileg szöveges formátumban érkezik,
+                //és a Convert.ToInt32 segítségével alakítjuk át szám formátumra.
+                
 
                 
                 if (num > 0)
@@ -82,13 +84,14 @@ namespace Ciklusok_for__while_
             Console.WriteLine("Thanks! The program has ended.");
 
             Console.WriteLine("Foreach:");
-            //"foreach" is an iteration loop control structure in programming
-            //that is used to iterate through a collection or elements in a collection
-            //( array, list, set) and perform a specified operation on each element
+            //A 'foreach' egy iterációs ciklusvezérlő struktúra a programozásban, 
+            //amit arra használnak,ogy végigiteráljon egy gyűjteményen vagy a gyűjtemény elemein
+            //(tömb, lista, halmaz),és végrehajtson egy meghatározott műveletet minden elemen.
+            
 
             /* foreach (elementType element in collection)
              {
-                 // This is where you perform the operations on the element
+                 // Itt hajtod végre a műveleteket az elemeken
              }*/
 
 
@@ -100,11 +103,11 @@ namespace Ciklusok_for__while_
             }
 
             Console.WriteLine("Switch");
-            //A "switch" statement is a control structure in programming that compares the value of a variable or
-            //expression with a series of different cases.
-            //When it finds the right case, it executes the block of code there.
-            //The "switch" statement is useful if we want to handle several possible values ​​and
-            //perform different actions based on them.
+            //A 'switch' utasítás egy vezérlési struktúra a programozásban, amely összehasonlítja 
+            //egy változó vagy kifejezés értékét különböző esetekkel.
+            //Amikor megtalálja a megfelelő esetet, végrehajtja a kódblokkot ott. 
+            //A 'switch' utasítás hasznos, ha több lehetséges értéket szeretnénk kezelni, 
+            //és különböző műveleteket szeretnénk végrehajtani az alapján.
 
             int day = 3;
             string dayName = "";
@@ -140,9 +143,12 @@ namespace Ciklusok_for__while_
             }
 
             /*
-            //In this example, the loop is infinite because the loop condition always remains true.
+            //Ebben a példában a ciklus végtelen, mert a ciklus feltétel mindig igaz marad.
             ConsoleColor[] colors = (ConsoleColor[])ConsoleColor.GetValues(typeof(ConsoleColor));
-
+            
+            //A konzol szöveg színét a Console.ForegroundColor beállításával változtatja meg, 
+            //majd a jelenlegi színt kiírja a konzolra. 
+            //A folyamat végtelenül ismétlődik, és a színek közötti átmenetet mutatja be.
             while (true)
             {
                 foreach (var color in colors)
