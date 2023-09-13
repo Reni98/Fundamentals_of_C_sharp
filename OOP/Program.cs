@@ -22,13 +22,7 @@ namespace Kutya
             return $"Név: {nev}, Kor: {kor}";
         }
 
-
-
-
-
     }
-
-
 
     internal class Program
     {
