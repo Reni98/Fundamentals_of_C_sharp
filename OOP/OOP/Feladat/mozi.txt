@@ -1,20 +1,20 @@
-1;Star Wars: A New Hope;John Doe;1500;7 jegy
-2;Jurassic Park;Alice Smith;2000;14 jegy
-3;The Shawshank Redemption;Bob Johnson;2500;3 jegy
-4;Inception;Eva Williams;800;19 jegy
-5;The Matrix;David Lee;1200;12 jegy
-6;Pulp Fiction;Laura Miller;3500;4 jegy
-7;The Godfather;Michael Davis;1800;6 jegy
-8;Titanic;Sarah Wilson;2200;8 jegy
-9;Avatar;Robert Taylor;2600;2 jegy
-10;The Dark Knight;Jennifer Brown;1500;5 jegy
-11;Forrest Gump;William Jones;1900;10 jegy
-12;The Lord of the Rings: The Fellowship of the Ring;Emily Martinez;2800;1 jegy
-13;The Avengers;Daniel Wilson;2400;22 jegy
-14;Gladiator;Olivia Johnson;2700;13 jegy
-15;The Silence of the Lambs;Sophia Anderson;2030;9 jegy
-16;Fight Club;James Lee;2100;18 jegy
-17;Casablanca;Ava Garcia;2900;15 jegy
-18;The Terminator;Logan Lopez;3100;20 jegy
-19;The Shawshank Redemption;Grace Davis;2600;11 jegy
-20;The Green Mile;Lucas Moore;3800;17 jegy
+1;Star Wars: A New Hope;John Doe;1500;7
+2;Jurassic Park;Alice Smith;2000;1
+3;The Shawshank Redemption;Bob Johnson;2500;3
+4;Inception;Eva Williams;800;19
+5;The Matrix;David Lee;1200;12
+6;Pulp Fiction;Laura Miller;3500;4
+7;The Godfather;Michael Davis;1800;6
+8;Titanic;Sarah Wilson;2200;8
+9;Avatar;Robert Taylor;2600;2
+10;The Dark Knight;Jennifer Brown;1500;5
+11;Forrest Gump;William Jones;1900;10
+12;The Lord of the Rings: The Fellowship of the Ring;Emily Martinez;2800;1
+13;The Avengers;Daniel Wilson;2400;22
+14;Gladiator;Olivia Johnson;2700;13
+15;The Silence of the Lambs;Sophia Anderson;2030;9
+16;Fight Club;James Lee;2100;18
+17;Casablanca;Ava Garcia;2900;15
+18;The Terminator;Logan Lopez;3100;20
+19;The Shawshank Redemption;Grace Davis;2600;11
+20;The Green Mile;Lucas Moore;3800;17
