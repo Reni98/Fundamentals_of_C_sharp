@@ -21,15 +21,7 @@ namespace Kutya
         {
             return $"Név: {nev}, Kor: {kor}";
         }
-
-
-
-
-
     }
-
-
-
     internal class Program
     {
         static void Main(string[] args)
@@ -39,7 +31,6 @@ namespace Kutya
             Console.WriteLine(k.GetAdatok());
 
             Console.ReadKey();
-
 
         }
     }
