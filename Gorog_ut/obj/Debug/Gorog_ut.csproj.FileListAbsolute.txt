@@ -1,0 +1,7 @@
+C:\Users\renat\source\repos\Gorog_ut\Gorog_ut\bin\Debug\Gorog_ut.exe.config
+C:\Users\renat\source\repos\Gorog_ut\Gorog_ut\bin\Debug\Gorog_ut.exe
+C:\Users\renat\source\repos\Gorog_ut\Gorog_ut\bin\Debug\Gorog_ut.pdb
+C:\Users\renat\source\repos\Gorog_ut\Gorog_ut\obj\Debug\Gorog_ut.csproj.AssemblyReference.cache
+C:\Users\renat\source\repos\Gorog_ut\Gorog_ut\obj\Debug\Gorog_ut.csproj.CoreCompileInputs.cache
+C:\Users\renat\source\repos\Gorog_ut\Gorog_ut\obj\Debug\Gorog_ut.exe
+C:\Users\renat\source\repos\Gorog_ut\Gorog_ut\obj\Debug\Gorog_ut.pdb
