@@ -1,0 +1,5 @@
+//Készíts C#-ban egy olyan console app-ot amiben vannak menüpontok,
+//A program üdvözölje a felhasználót.
+//Kérdezze meg a felhasználótól, szeretne e vásárolni, utána termék kategóriák, hozzá tudja adni pl laptopot és az árát, márkáját, megtudja nézni a kosár tartalmat, kiírja a végösszeget.
+//Legyenek termék menüpontok amiből választhat a felhasznaló
+//A termékeket hozzá lehessen adni a kosárhoz, kiíratni törölni, szerkeszteni, fájlbamenteni.
