@@ -1,0 +1,6 @@
+//Generálj ki 4 random számot és tárold el tömbben vagy listában.
+//Kérj be a felhasználótól 4 számot  és tárold el tömbben vagy listában.
+//Hasonlísd össze a számokat, ha volt megegyező szám, akkor írja ki annak megfelőlen, hogy hány találat egyezett, pl. volt önnek 1 találata
+//Ha mind a 4 szám megegyezett, akkor azt írja ki a program, hogy nyert.
+//Kérdezd meg a felhasználót szeretné-e folytatni a játékot.
+//Ha már nem akarja folytani, akkor legyenek kiírva a számok egy txt fájlba.
