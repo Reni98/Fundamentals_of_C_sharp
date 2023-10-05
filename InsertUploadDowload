@@ -1,6 +1,6 @@
     private void Form1_Load(object sender, EventArgs e)
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-3R1CEIVI;Initial Catalog=project;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=");
         SqlCommand cnn = new SqlCommand("Select * from projecttab", con);
         SqlDataAdapter da = new SqlDataAdapter(cnn);
         DataTable table = new DataTable();
