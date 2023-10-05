@@ -1,0 +1,54 @@
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-3R1CEIVI;Initial Catalog=project;Integrated Security=True");
+        SqlCommand cnn = new SqlCommand("Select * from projecttab", con);
+        SqlDataAdapter da = new SqlDataAdapter(cnn);
+        DataTable table = new DataTable();
+        da.Fill(table);
+        dataGridView1.DataSource = table;
+
+    }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-3R1CEIVI;Initial Catalog=project;Integrated Security=True");
+        con.Open();
+        SqlCommand cnn = new SqlCommand("Insert into projecttab values(@id,@name,@age,@email)", con);
+
+        cnn.Parameters.AddWithValue("@id",int.Parse(textBox1.Text));
+        cnn.Parameters.AddWithValue("@name",(textBox2.Text));
+        cnn.Parameters.AddWithValue("@age", int.Parse(textBox3.Text));
+        cnn.Parameters.AddWithValue("@email",(textBox4.Text));
+        cnn.ExecuteNonQuery();
+        con.Close();
+        MessageBox.Show("Iserted data");
+    }
+
+    private void button2_Click(object sender, EventArgs e)
+    {
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-3R1CEIVI;Initial Catalog=project;Integrated Security=True");
+        con.Open();
+        SqlCommand cnn = new SqlCommand("Update projecttab Set name=@name,age=@age,email=@email Where id=@id", con);
+
+        cnn.Parameters.AddWithValue("@id", int.Parse(textBox1.Text));
+        cnn.Parameters.AddWithValue("@name", (textBox2.Text));
+        cnn.Parameters.AddWithValue("@age", int.Parse(textBox3.Text));
+        cnn.Parameters.AddWithValue("@email", (textBox4.Text));
+        cnn.ExecuteNonQuery();
+        con.Close();
+        MessageBox.Show("Updated data");
+    }
+
+    private void button3_Click(object sender, EventArgs e)
+    {
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-3R1CEIVI;Initial Catalog=project;Integrated Security=True");
+        con.Open();
+        SqlCommand cnn = new SqlCommand("Delete projecttab  Where id=@id", con);
+
+        cnn.Parameters.AddWithValue("@id", int.Parse(textBox1.Text));
+        
+        cnn.ExecuteNonQuery();
+        con.Close();
+        MessageBox.Show("Deleted data");
+    }
+}
