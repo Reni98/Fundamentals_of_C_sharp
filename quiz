@@ -1,0 +1,141 @@
+    public Form1()
+    {
+        InitializeComponent();
+    }
+
+    //create an arry of questions
+    string[] questions = {"200 - 173 = ?", "100 + 1000 = ?", "300 x 50 = ?", "400 / 10 = ?",
+    "100 - 100 = ?"};
+
+    //create an array of options
+    //5 questions
+    //5 options
+
+    string[,] options = new string[5, 5] {{"100","123","27","28","27" },
+                                            {"1100","500","900","200","1100" },
+                                            {"1700","15000","20000","30000","15000" },
+                                            {"4","4000","400","40","40" },   
+                                           {"0","1","90","100","0" },};
+
+    int index = 0, correct = 0;
+
+    public void checkAnswer(RadioButton rbt)
+    {
+        if (rbt.Text.Equals(options[index,4]))
+        {
+            correct++;
+            
+           
+        }
+        else
+        {
+                       
+        }
+        index++;
+        //disable radio button
+        setEnable(false);
+    }
+
+    public void uncheck()
+    {
+        radioButtonOption1.Checked = false;
+        radioButtonOption2.Checked = false;
+        radioButtonOption3.Checked = false;
+        radioButtonOption4.Checked = false;
+    }
+
+    public void resetRadio()
+    {
+       
+        foreach(Control c in this.Controls)
+        {
+            if(c is RadioButton)
+            {
+                RadioButton rbt = (RadioButton)c;
+                rbt.BackColor = Color.White;
+              
+            }
+        }
+    }
+
+    //crate a function to enable/disable radiobuttons
+    public void setEnable(Boolean yes_or_no)
+    {
+        radioButtonOption1.Enabled= yes_or_no;
+        radioButtonOption2.Enabled = yes_or_no;
+        radioButtonOption3.Enabled = yes_or_no;
+        radioButtonOption4.Enabled = yes_or_no;
+    }
+    private void button_next_Click(object sender, EventArgs e)
+    {
+        resetRadio();
+        if (button_next.Text.Equals("Restart The Quiz"))
+        {
+            index = 0;
+            correct = 0;
+            richTextBox1.BackColor = Color.AntiqueWhite;
+            richTextBox1.ForeColor = Color.DarkGray;
+            button_next.Text = "Next";
+        }
+       
+        if(index == questions.Length)
+        {
+            richTextBox1.Text = "your Score:" + correct + " / " + questions.Length;
+            if(correct >= (float)questions.Length/2)
+            {
+                richTextBox1.BackColor = Color.Green;
+                richTextBox1.ForeColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                richTextBox1.BackColor = Color.Red;
+                richTextBox1.ForeColor = Color.WhiteSmoke;
+            }
+            button_next.Text = "Restart The Quiz";
+        
+        }
+        else
+        {
+            //enable radiobuttons
+            setEnable(true);
+            uncheck();
+            richTextBox1.Text = questions[index];
+            radioButtonOption1.Text = options[index, 0];
+            radioButtonOption2.Text = options[index, 1];
+            radioButtonOption3.Text = options[index, 2];
+            radioButtonOption4.Text = options[index, 3];
+
+            if(index == questions.Length-1)
+            {
+                button_next.Text = "Finish an see your Result";
+            }
+        }
+       
+    }
+
+    private void radioButtonOption1_Click(object sender, EventArgs e)
+    {
+        checkAnswer(radioButtonOption1);
+    }
+
+    private void radioButtonOption2_Click(object sender, EventArgs e)
+    {
+        checkAnswer(radioButtonOption2);
+    }
+
+    private void radioButtonOption3_Click(object sender, EventArgs e)
+    {
+        checkAnswer(radioButtonOption3);
+    }
+
+    private void radioButtonOption4_Click(object sender, EventArgs e)
+    {
+        checkAnswer(radioButtonOption4);
+    }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        //call the button click even
+        button_next.PerformClick();
+    }
+}
