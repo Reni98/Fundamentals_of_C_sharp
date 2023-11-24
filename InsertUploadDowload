@@ -11,7 +11,7 @@
 
     private void button1_Click(object sender, EventArgs e)
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-3R1CEIVI;Initial Catalog=project;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=");
         con.Open();
         SqlCommand cnn = new SqlCommand("Insert into projecttab values(@id,@name,@age,@email)", con);
 
@@ -26,7 +26,7 @@
 
     private void button2_Click(object sender, EventArgs e)
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-3R1CEIVI;Initial Catalog=project;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=");
         con.Open();
         SqlCommand cnn = new SqlCommand("Update projecttab Set name=@name,age=@age,email=@email Where id=@id", con);
 
@@ -41,7 +41,7 @@
 
     private void button3_Click(object sender, EventArgs e)
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-3R1CEIVI;Initial Catalog=project;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=);
         con.Open();
         SqlCommand cnn = new SqlCommand("Delete projecttab  Where id=@id", con);
 
