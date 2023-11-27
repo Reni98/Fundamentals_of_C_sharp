@@ -1,0 +1,74 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace Feladat
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+       
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            BindData();
+        }
+        SqlConnection con = new SqlConnection(@"Data Source=");
+        void BindData()
+        {
+            SqlCommand cnn = new SqlCommand("Select * from listTable", con);
+            SqlDataAdapter da = new SqlDataAdapter(cnn);
+            DataTable table = new DataTable();
+            da.Fill(table);
+            dataGridView1.DataSource = table;   
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cnn = new SqlCommand("Insert into listTable(title,description)values(@title,@description)",con);
+            cnn.Parameters.AddWithValue("@title",textBox1.Text);
+            cnn.Parameters.AddWithValue("@description",textBox2.Text);
+            cnn.ExecuteNonQuery();
+            con.Close();
+            BindData();
+            MessageBox.Show("Adatok hozzá lettek adva");
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cnn = new SqlCommand("Select * from listTable where title = @title",con);
+            cnn.Parameters.AddWithValue("@title",textBox1.Text);
+            SqlDataAdapter da = new SqlDataAdapter(cnn);
+            DataTable table = new DataTable();
+            da.Fill(table);
+            con.Close();
+            dataGridView1.DataSource= table;
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cnn = new SqlCommand("Delete from listTable where title = @title",con);
+            cnn.Parameters.AddWithValue("@title", textBox1.Text);
+            cnn.ExecuteNonQuery();
+            con.Close();
+            BindData();
+            MessageBox.Show("törlésre került");
+        }
+    }
+}
